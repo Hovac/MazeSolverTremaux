@@ -17,27 +17,54 @@
             height: 100vh;
             display: block;
             position: absolute;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(23, 58, 90);
+        }
+
+        #startMaze {
+            position: absolute;
+            display: block;
+            top: 20px;
+            left: 20px;
+            font-size: 25px;
+        }
+
+        #imageView {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background-color: rgb(23, 58, 90);
+
+        }
+
+        #mazes {
+            position: absolute;
+            top: 20px;
+            left: 220px;
+            font-size: 25px;
         }
     </style>
 </head>
 
 <body>
-
+    <button id="startMaze" onclick="startMazeBtn()"> START MAZE </button>
+    <select name="mazes" id="mazes">
+        <option value="mazeSmall">Small Maze</option>
+        <option value="mazeBig">Big Maze</option>
+    </select>
     <canvas id='imageView'></canvas>
 
     <script type='text/javascript' src='tremauxMazeSolver/tremaux.js'></script>
     <script type='text/javascript' src='tremauxMazeSolver/walker.js'></script>
     <script type='text/javascript' src='tremauxMazeSolver/maze.js'></script>
     <script type='text/javascript' src='tremauxMazeSolver/controller.js'></script>
-    <script type='text/javascript' src='tremauxMazeSolver/mazeBig.js'></script>
-    <script type='text/javascript' src='tremauxMazeSolver/mazeSmall.js'></script>
     <script type='text/javascript' src='tremauxMazeSolver/init.js'></script>
 
-
-    <!--     <script src="traverse.js"></script>
+    <!--
+    GUI not working as expected, needs lots of work
+    <script src="traverse.js"></script>
     <script src="cell.js"></script>
-    <script src="initStart.js"></script> -->
+    <script src="initStart.js"></script> 
+    -->
 </body>
 
 </html>

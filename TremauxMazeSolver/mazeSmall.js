@@ -9,7 +9,7 @@ var maze = {
     },
     width: 20,
     height: 10,
-    speed: 200,
+    speed: 150,
     map: '\
 ** *****************\
 ** ****            *\
