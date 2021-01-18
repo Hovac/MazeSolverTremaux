@@ -1,19 +1,13 @@
 var controller = new mazeController();
 //initializing stuff and loading the maze map
-function startMazeBtn() {
+document.getElementById("startMaze").addEventListener("click", function() {
     document.getElementById("imageView").style.backgroundColor = "white";
     var mazeSelect = document.getElementById("mazes");
     maze = (mazeSelect.value == "mazeSmall") ? mazeSmall : mazeBig;
     console.log(maze);
     controller.init(maze);
     controller.run();
-}
-/* if (window.addEventListener) {
-    window.addEventListener('load', function () {
-        //onLoad clear the maze and run the "robot"
-
-    }); 
-}*/
+});
 
 var mazeBig = {
     start: {
