@@ -12,10 +12,10 @@ function mazeManager(context, maze) {
         for (var y = 0; y < this.height; y++) {
             for (var x = 0; x < this.width; x++) {
                 if (this.isWall(x, y)) {
-                    this.context.fillStyle = 'black';
+                    this.context.fillStyle = "#222222";
                     this.context.fillRect(x * 10, y * 10, 10, 10);
                 } else if (drawClear) {
-                    this.context.fillStyle = 'white';
+                    this.context.fillStyle = "white";
                     this.context.fillRect(x * 10, y * 10, 10, 10);
                 }
             }
